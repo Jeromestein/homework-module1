@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <header>
-            <img src="images/cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
+            <img src="images/cliff-ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
             <div class="main-header">
                 <div class="logo">
                     <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
@@ -25,25 +25,36 @@
         </header>
 
         <main>
-            <h2>Introducing California's Greatest Cliffs</h2>
+            <h1>Registration Form</h1>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-            <h3>What is so unique about California cliffs?</h3>
-            <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <h3>Where are these cliffs?</h3>
-            <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily. The closest cliff to Irvine is West Cliff, which is the most popular and most visited.</p>
+                <div>
+                    <label for="activity">Preferred Activity:</label>
+                    <select id="activity" name="activity">
+                        <option value="">Select an activity</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="camping">Camping</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Additional Comments:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
         </main>
-
-        <section>
-            <ul id="partners">
-                <li class="partner"><h3>Partner 1 Image</h3></li>
-                <li class="partner"><h3>Partner 2 Image</h3></li>
-                <li class="partner"><h3>Partner 3 Image</h3></li>
-                <li class="partner"><h3>Partner 4 Image</h3></li>
-                <li class="partner"><h3>Partner 5 Image</h3></li>
-                <li class="partner"><h3>Partner 6 Image</h3></li>
-            </ul>
-        </section>
 
         <footer>
             <div id="nondisclaimer">
@@ -62,4 +73,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html> 
