@@ -46,6 +46,48 @@
             text-transform: uppercase;
             font-size: 14px;
         }
+        .main-menu ul li a {
+            text-decoration: none;
+            color: #888;
+        }
+        .main-menu ul li a:hover {
+            color: #9ed034;
+        }
+        .main-menu ul li.active {
+            background: #9ed034;
+            border: none;
+        }
+        
+        .main-menu ul li.active a {
+            color: #fff;
+        }
+        main {
+            padding: 2em;
+        }
+        main h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #9ed034;
+            font-size: 50px;
+            margin: 0;
+            padding: 1em 0 0.5em 0;
+        }
+        
+        main h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            font-size: 24px;
+            margin: 0;
+            padding: 0.5em 0;
+        }
+        
+        main p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0.5em 0;
+        }
     </style>
 </head>
 <body id="home">
@@ -57,7 +99,7 @@
                 </div>
                 <nav class="main-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="cliffs.html">Cliffs</a></li>
                         <li><a href="activities.html">Activities</a></li>
                         <li><a href="contact.html">Contact</a></li>
