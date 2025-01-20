@@ -24,6 +24,10 @@
                 </nav>
             </div>
         </header>
+        <section id="timeofday">
+            <span>Your Current Local Time: </span>
+            <span id="clock"></span>
+        </section>
 
         <main>
             <h2>Introducing California's Greatest Cliffs</h2>
@@ -62,5 +66,27 @@
             </div>
         </footer>
     </div>
+    <!-- JavaScript Codes -->
+    <script src="clock.js" defer>
+        function currentTime() {
+            const date = new Date();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+            const ampm = hours >= 12 ? "PM" : "AM";
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (hours > 12) {
+                hours = hours - 12;
+            }
+            var time = hours + ":" + minutes + ":" + seconds + " " + ampm;
+            document.getElementById("clock").innerHTML = time;
+        }
+        setInterval(currentTime, 1000);
+    </script>
 </body>
 </html>
