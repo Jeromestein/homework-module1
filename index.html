@@ -67,25 +67,29 @@
         </footer>
     </div>
     <!-- JavaScript Codes -->
-    <script src="clock.js" defer>
+    <script>
         function currentTime() {
-            const date = new Date();
-            const hours = date.getHours();
-            const minutes = date.getMinutes();
-            const seconds = date.getSeconds();
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
             const ampm = hours >= 12 ? "PM" : "AM";
-            if (seconds < 10) {
-                seconds = "0" + seconds;
-            }
-            if (minutes < 10) {
-                minutes = "0" + minutes;
-            }
-            if (hours > 12) {
-                hours = hours - 12;
-            }
-            var time = hours + ":" + minutes + ":" + seconds + " " + ampm;
+            
+            // Convert hours to 12-hour format
+            hours = hours % 12;
+            hours = hours ? hours : 12; // If hours is 0, make it 12
+            
+            // Add leading zeros
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            
+            const time = hours + ":" + minutes + ":" + seconds + " " + ampm;
             document.getElementById("clock").innerHTML = time;
         }
+
+        // Initial call
+        currentTime();
+        // Update every second
         setInterval(currentTime, 1000);
     </script>
 </body>
