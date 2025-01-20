@@ -69,6 +69,9 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
 }
+main h1 {
+    color: #9ed034;
+} 
 main h2 {
     color: #9ed034;
     font-size: 50px;
@@ -219,4 +222,126 @@ footer #nondisclaimer .social .fa-twitter {
 footer #nondisclaimer .social .fa-instagram {
     background: #125688;
     color: white;
+}
+
+/* Contact */
+#contact p{
+    color: gray;
+}
+
+#contact p span{
+    color: black;
+}
+
+/* Contact Form Styles */
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form-wrapper {
+    width: 50%;
+    padding-right: 40px;
+}
+
+#contact form {
+    width: 100%;
+    max-width: none;
+}
+
+#contact fieldset {
+    border: 1px solid #9ed034;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+}
+
+#contact legend {
+    color: #4977D1;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+#contact label {
+    display: block;
+    font-weight: normal;
+    color: #000;
+    margin: 10px 0 5px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select,
+#contact textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#contact .radio-group,
+#contact .select-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#contact .radio-group label,
+#contact .select-group label {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    min-width: 200px;
+}
+
+#contact .radio-options {
+    display: flex;
+    align-items: center;
+}
+
+#contact .radio-options input[type="radio"] {
+    margin: 0 5px 0 0;
+}
+
+#contact .radio-options span {
+    margin-right: 20px;
+}
+
+#contact .select-group select {
+    flex: 1;
+    margin: 0;
+}
+
+#contact textarea {
+    height: 140px;
+    resize: none;
+}
+
+#contact input[type="submit"] {
+    background-color: #4977D1;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #3a5fa3;
+}
+
+/* Contact page text styles */
+#contact h1 {
+    color: #4977D1;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
