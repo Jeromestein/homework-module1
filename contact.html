@@ -24,59 +24,64 @@
         </header>
 
         <main>
-            <h2>Contacting Us</h2>
+            <h1>Contacting Us</h1>
             <p>
-                If you need more information about our cliff sites and activities, please don't hesitate to contact us. Our operating hours are Monday through Friday from 6:00 AM to 6:00 PM.
+                You can drop by the visitors information center at the cliff site that you plan on visiting. They are open
+                7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about 
+                the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
             </p>
-            
-            <p> <span>Phone:</span> (800)GCLIFFS </br>
-            <span>Email:</span> info@greatcliffs.com</p>
-
-            <div class="contact-container">
-                
-                    <form action="/contact" method="post">
-                        <fieldset>
-                            <div class="contact-form-wrapper">
-                            <legend>Contact Form</legend>
-                            
-                            <label>Name</label>
-                            <input type="text" name="name" placeholder="John Doe"><br>
-                            
-                            <label>Email</label>
-                            <input type="email" name="email" placeholder="johndoe@gmail.com"><br>
-                            
-                            <label>Enter your phone</label>
-                            <input type="tel" name="phone" placeholder="xxx-xxx-xxxx"><br>
-                            
-                            <div class="radio-group">
-                                <label>How should we contact you?</label>
-                                <div class="radio-options">
-                                    <input type="radio" name="contact" value="email" id="email">
-                                    <span>Email</span>
-                                    <input type="radio" name="contact" value="phone" id="phone">
-                                    <span>Phone</span>
-                                </div>
-                            </div>
-                            
-                            <div class="select-group">
-                                <label>Which Cliff are you inquiring?</label>
-                                <select name="cliff">
-                                    <option value="west">West Cliff</option>
-                                    <option value="north">North Cliff</option>
-                                    <option value="east">East Cliff</option>
-                                    <option value="south">South Cliff</option>
-                                </select>
-                            </div>
-                            
-                            <label>How did you hear about us:</label><br>
-                            <textarea name="hear_about" rows="3"></textarea><br>
-                            
-                            <input type="submit" value="Inquire">
-                        </div>
-                        </fieldset>
-                    </form>
-                
+    
+            <div class="contactinfo">
+                <div class="phone">
+                    <span>Phone:</span>
+                    <span>(800)GCLIFFS</span>
+                </div>
+                <div class="email">
+                    <span>Email:</span>
+                    <span>info@greatcliffs.com</span>
+                </div>
             </div>
+
+            <form action="/contact" method="post">  
+                <fieldset>  
+                    <legend>Contact Form</legend>
+                    <div class="contact-form-wrapper">
+                    <div class="textbox">
+                        <label>Name:</label> 
+                        <input type="text" name="name" placeholder="John Doe">  
+                        <label>Email:</label>  
+                        <input type="text" name="email" placeholder="johndoe@gmail.com"> 
+                        <label>Phone:</label>
+                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
+                    </div>
+                    
+                    <div class="radios">
+                        <label>How should we contact you?</label>  
+                        <input type="radio" name="contact" value="email" checked>Email 
+                        <input type="radio" name="contact" value="phone">Phone
+                    </div>
+
+                    <div class="selectmenu">
+                        <label>Which Cliff are you inquiring?</label>  
+                        <select name="cliff">
+                            <option>West Cliff</option>
+                            <option>North Cliff</option>
+                            <option>East Cliff</option>
+                            <option>South Cliff</option>
+                        </select>
+                    </div>
+                    
+                    <div class="commentbox">
+                        <label>How did you hear about us:</label>  
+                        <textarea name="comments"></textarea>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="Inquire">
+                    </div> 
+                    </div>
+                </fieldset>  
+            </form>
         </main>
 
         <section>
