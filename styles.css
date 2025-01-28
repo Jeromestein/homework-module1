@@ -231,7 +231,7 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Contact */
 #contact p{
-    color: gray;
+    color: black;
 }
 
 #contact p span{
@@ -368,4 +368,24 @@ footer #nondisclaimer .social .fa-instagram {
     color: #125688;
     font-weight: bold;
     margin-left: 5px;
+}
+
+.randomcode {
+    display: flex; 
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
+
+.code-container {
+    display: flex; 
+    align-items: center; 
+}
+
+#codes {
+    background-color: gray;
+}
+
+
+.code-container input {
+    margin-right: 10px; 
 }
