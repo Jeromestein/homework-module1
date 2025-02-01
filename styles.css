@@ -406,3 +406,17 @@ footer #nondisclaimer .social .fa-instagram {
 .code-container input {
     margin-right: 10px; 
 }
+
+.textbox {
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+#emailField, #phoneField {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+#emailField.hidden, #phoneField.hidden {
+    opacity: 0;
+}
