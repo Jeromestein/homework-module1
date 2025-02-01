@@ -49,16 +49,25 @@
                     <div class="textbox">
                         <label>Name:</label> 
                         <input type="text" name="name" placeholder="John Doe">  
-                        <label>Email:</label>  
-                        <input type="text" name="email" placeholder="johndoe@gmail.com"> 
-                        <label>Phone:</label>
-                        <input type="text" name="phone" placeholder="xxx-xxx-xxxx"> 
                     </div>
                     
-                    <div class="radios">
-                        <label>How should we contact you?</label>  
-                        <input type="radio" name="contact" value="email" checked>Email 
-                        <input type="radio" name="contact" value="phone">Phone
+                    <div class="selectmenu">
+                        <label>How should we contact you?</label>
+                        <select name="contact_method" id="contactMethod">
+                            <option value="">Select One</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </div>
+
+                    <div class="textbox" id="emailField" style="display: none;">
+                        <label>Email:</label>  
+                        <input type="email" name="email" placeholder="johndoe@gmail.com"> 
+                    </div>
+
+                    <div class="textbox" id="phoneField" style="display: none;">
+                        <label>Phone:</label>
+                        <input type="tel" name="phone" placeholder="xxx-xxx-xxxx"> 
                     </div>
 
                     <div class="selectmenu">
@@ -116,5 +125,6 @@
     <!-- JavaScript Codes -->
     <script src="site_scripts.js"></script>
     <script src="randomcodes.js"></script>
+    <script src="form_scripts.js"></script>
 </body>
 </html>
