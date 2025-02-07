@@ -8,11 +8,14 @@ $(document).ready(function() {
             $(this).toggleClass("tdhighlight");
             
             if ($(this).hasClass("tdhighlight")) {
+                var columnIndex = $(this).index();
+                var cliffName = $('table thead th').eq(columnIndex).text();
+                
                 $('#displaySelected').css("visibility","visible");
                 $('#displaySelected').css("margin-top","2em");
-                $('#result').append("<p>"+content+"</p>");
+                $('#result').append("<p>" + content + " at <span>" + cliffName + "</span></p>");
             } else {
-                $('#result p:contains('+content+')').remove();
+                $('#result p:contains("'+content+'")').remove();
                 
                 if ($('#result').has('p').length == false) {
                     $('#displaySelected').css("visibility","hidden");

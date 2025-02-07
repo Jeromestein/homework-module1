@@ -450,3 +450,14 @@ table td.highlighted {
 #activities main #displaySelected #sendinfo input[type="email"] {
     width: 200px;
 }
+
+/* Activities Table Highlight Styles */
+table td.tdhighlight {
+    background-color: #93db70;  /* Green highlight for selected cells */
+}
+
+/* Location Highlight in Display Box */
+#activities main #result p span {
+    background-color: #BDE1FF;  /* Blue background for location */
+    padding: 0 5px;
+}
