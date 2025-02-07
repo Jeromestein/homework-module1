@@ -139,10 +139,6 @@ td:first-child {
     background: #BDE1FF;
 }
 
-
-
-
-
 section {
     width: 100%;
     background-color: #4288c3;
@@ -419,4 +415,8 @@ footer #nondisclaimer .social .fa-instagram {
 
 #emailField.hidden, #phoneField.hidden {
     opacity: 0;
+}
+
+table td.highlighted {
+    background-color: yellow;
 }
